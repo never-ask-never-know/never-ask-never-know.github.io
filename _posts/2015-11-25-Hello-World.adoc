@@ -1,3 +1,5 @@
 = Hello World!
 
-Finally I've found a place where all my thoughts and findings will live!
+Finally I've found a place where all my thoughts and findings about SQL Server will live! 
+Нарешті я зайшла місце, де зможу зберігати та ділитись знаннями про SQL Server!
+hp-tags: sqlserver
