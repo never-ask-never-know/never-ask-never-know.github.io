@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://never-ask-never-know.github.io/2015/08/12/I-really-wish-that-Microsoft-would-allow-this-feature-to-be-turned-off.html" />
     <meta property="og:image" content="https://never-ask-never-know.github.io/images/cover_lines.jpg" />
     <meta property="article:published_time" content="2015-08-11T21:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-11-28T21:07:40.525Z" />
+    <meta property="article:modified_time" content="2015-11-28T22:15:07.862Z" />
     <meta property="article:tag" content="FTS" />
     <meta property="article:tag" content="sqlserver2012" />
     <meta property="article:tag" content="sqlserver2008r2" />
@@ -51,7 +51,7 @@
     "headline": "&quot;I really wish that Microsoft would allow this &#x27;feature&#x27; to be turned off&quot;",
     "url": "https://never-ask-never-know.github.io/2015/08/12/I-really-wish-that-Microsoft-would-allow-this-feature-to-be-turned-off.html",
     "datePublished": "2015-08-11T21:00:00.000Z",
-    "dateModified": "2015-11-28T21:07:40.525Z",
+    "dateModified": "2015-11-28T22:15:07.862Z",
     "image": "https://never-ask-never-know.github.io/images/cover_lines.jpg",
     "keywords": "FTS,  sqlserver2012,  sqlserver2008r2,  sqlserver",
     "description": "На днях зіштовхнулась з проблемою, FTS повертав на одному й тому ж наборі даних, але на різних машинах (MS SQL 2012 vs MS SQL 2008 R2), різні результати для значення «050056». В одному випадку це були всі рядки, в яких..."
@@ -90,7 +90,9 @@
 <p>На днях зіштовхнулась з проблемою, FTS повертав на одному й тому ж наборі даних, але на різних машинах (MS SQL 2012 vs MS SQL 2008 R2), різні результати для значення «050056». В одному випадку це були всі рядки, в яких зустрічалось тільки 050056 (2008 R2), а в іншому – 0 на початку ігнорувався і вибирались всі значення з 50056.</p>
 </div>
 <div class="paragraph">
-<p>Виявилось, що в такій поведінці «винні» word breakers, логіка яких змінилась в MS SQL 2012. Якщо подивитись, які терми створюються на різних версіях SQL Server (select * from  sys.dm_fts_parser('050056', 1033, null, 0)), то побачимо, що в MS SQL 2008 R2 це «050056» та «nn050056»,  а в оновленій версії - «050056» та «nn50056» (!)
+<p>Виявилось, що в такій поведінці «винні» word breakers, логіка яких змінилась в MS SQL 2012. Якщо подивитись на терми, що створюються на різних версіях SQL Server за допомогою команди<br>
+<code>select * from  sys.dm_fts_parser('050056', 1033, null, 0))</code><br>
+то побачимо, що в MS SQL 2008 R2 це «050056» та «nn050056»,  а в оновленій версії - «050056» та «nn50056» (!)<br>
 Змінити таку поведінку можна, повернувшись, до попередньої версії Word Breakers - <a href="https://msdn.microsoft.com/en-us/library/gg509108.aspx" class="bare">https://msdn.microsoft.com/en-us/library/gg509108.aspx</a></p>
 </div>
 <div class="paragraph">
