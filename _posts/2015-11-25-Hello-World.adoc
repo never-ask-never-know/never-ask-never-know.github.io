@@ -1,4 +1,5 @@
 = Hello World!
+:hp-image: cover_lines.jpg
 
 Finally I've found a place where all my thoughts and findings about SQL Server will live! 
 
