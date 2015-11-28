@@ -1,4 +1,5 @@
 = "I really wish that Microsoft would allow this 'feature' to be turned off"
+:hp-image: cover_lines.jpg
 :hp-tags: FTS, sqlserver2012, sqlserver2008r2, sqlserver
 :published_at: 2015-08-12
 
