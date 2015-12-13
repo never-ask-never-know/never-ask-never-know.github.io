@@ -12,4 +12,7 @@
 === Моя пропозиція: Set based solution
 
 
-Profit, enjoy!
+
+
+Profit, enjoy! +
+icon:heart-o[size=2x]
