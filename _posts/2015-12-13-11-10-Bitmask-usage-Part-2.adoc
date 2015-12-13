@@ -3,9 +3,12 @@
 :hp-image: cover_lines.jpg
 :hp-tags: bitmask sqlserver set computed column indexes
 
-****Першу частину можна почитати https://never-ask-never-know.github.io/2015/11/25/11-10-Bitmask-usage.html[*тут*]
+****Першу частину можна почитати
+https://never-ask-never-know.github.io/2015/11/25/11-10-Bitmask-usage.html[*тут*]. +
+ +
+Отже, ви вирішили використовувати bitmask у себе в проекті. Добре. Сподіваюсь, цей пост буде корисним для вас. 
 
-	Отже, ви вирішили використовувати bitmask у себе в проекті. Добре. Сподіваюсь, цей пост буде корисним для вас.
+
 
 === Спочатку ви зробите так (скоріш за все)
 === Як підвищити продуктивність?
