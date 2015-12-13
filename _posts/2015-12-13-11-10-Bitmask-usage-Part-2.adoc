@@ -1,0 +1,21 @@
+= 1+1 = 10. Bitmask usage. Part 2
+:hide-uri-scheme:
+:hp-image: cover_lines.jpg
+:hp-tags: bitmask sqlserver set computed column indexes
+
+Першу частину можна почитати https://never-ask-never-know.github.io/2015/11/25/11-10-Bitmask-usage.html[*тут*].
+
+
+ 
+ -- вступ
+ -- рішення до якого приходять зазвичай
+ -- вдосконалення за допомогою індексів, обчислювального поля
+ -- сет бейзд рішення
+ -- висновки
+ 
+ Отже, ви вирішили використовувати bitmask у себе в проекті. Добре. Сподіваюсь, цей пост буде корисним для вас.
+ 
+ 
+ 
+
+ 
